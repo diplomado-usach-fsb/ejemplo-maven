@@ -1,7 +1,7 @@
 # Getting Started
 
 ## Windows
-## prueba
+## prueba2
 
 ### Compile Code
 * ./mvnw.cmd clean compile -e
