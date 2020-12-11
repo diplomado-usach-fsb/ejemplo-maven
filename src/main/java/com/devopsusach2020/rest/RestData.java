@@ -48,6 +48,7 @@ public class RestData {
 		Gson gson = new Gson();
         Pais[] estados = gson.fromJson(call.getBody().toLowerCase(), Pais[].class);
 
+
         for(Pais estado : estados) {
         	response.setDate(estado.getDate());
         	response.setActive(estado.getActive());
