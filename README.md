@@ -19,20 +19,19 @@
 ### Testing Application
 * Abrir navegador: http://localhost:8081/rest/mscovid/test?msg=testing
 
+
 ## Linux
 
-### Compile Code
-* ./mvnw clean compile -e
+### Compile Code / Test Code / Jar Code
+*  gradle build
 
-### Test Code
-* ./mvnw clean test -e
 
-### Jar Code
-* ./mvnw clean package -e
+##Test Code
+gradle test
 
 ### Run Jar
-* Local:      ./mvnw spring-boot:run 
-* Background: nohup bash mvnw spring-boot:run &
+* Local:   gradle bootRun
+* Background: nohup bash gradle bootRun &
 
 ### Testing Application
 * curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'
